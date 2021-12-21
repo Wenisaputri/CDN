@@ -86,11 +86,11 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 # install
 apt-get --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen rsyslog iftop htop net-tools zip unzip wget net-tools curl nano sed screen gnupg gnupg1 bc apt-transport-https build-essential dirmngr libxml-parser-perl neofetch git lsof
 echo "clear" >> .profile
-echo "figlet -f slant AFDHAN - NEZA | lolcat" >> .profile
+echo "figlet -f slant DP VPN | lolcat" >> .profile
 echo "sleep 1" >> .profile
 echo "clear" >> .profile
 echo "neofetch" >> .profile
-echo "echo -e \" - Mod By Dhansss X NezaVPN\" | lolcat" >> .profile
+echo "echo -e \" - Mod By DP VPN\" | lolcat" >> .profile
 echo "echo -e \"\x1b[96m - Silahkan Ketik\x1b[m \x1b[92mmenu\x1b[m \x1b[96mUntuk Melihat daftar Perintah\x1b[m\"" >> .profile
 
 # install webserver
@@ -100,7 +100,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/Afdhan/sc/main/nginx.conf"
 mkdir -p /home/vps/public_html
-echo "<br><b><center><a href=\"https://wa.me/6282252655313\">AFDHAN</a> - <a href=\"https://wa.me/6283129011845\">NEZA</a> VPN PROJECT</center></b></br>" >> /home/vps/public_html/index.html
+echo "<br><b><center><a href=\"https://link.dpvpn.tk/wa\">TOHERI</a> VPN PROJECT</center></b></br>" >> /home/vps/public_html/index.html
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/Afdhan/sc/main/vps.conf"
 /etc/init.d/nginx restart
 
@@ -166,7 +166,7 @@ socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
 [dropbear]
-accept = 567
+accept = 990
 connect = 127.0.0.1:109
 
 [openssh]
@@ -311,7 +311,7 @@ chmod +x /usr/local/bin/reboot_otomatis
 echo "0 0 * * * root /usr/local/bin/reboot_otomatis" > /etc/cron.d/reboot_otomatis
 
 echo -e "Done Install SSH Services" | lolcat
-figlet -f slant AFDHAN - NEZA | lolcat
+figlet -f slant DP VPN | lolcat
 sleep 1
 # finihsing
 clear
