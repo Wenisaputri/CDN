@@ -17,7 +17,7 @@ CITY=$(curl -s ipinfo.io/city )
 COUNTRY=$(curl -s ipinfo.io/country )
 
 MYIP=$(wget -qO- ipinfo.io/ip);
-IZIN=$( curl https://afdhan.github.io/sce/izin | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/Wenisaputri/sce/main/izin | grep $MYIP )
 echo "Memeriksa Hak Akses VPS..."
 if [ $MYIP = $IZIN ]; then
 clear
@@ -110,7 +110,7 @@ echo -e " Port Trojan-GO   : ${trojango}"
 echo -e " Key Trojan-GFW   : ${user2}"
 echo -e " Key Trojan-GO    : ${users}"
 echo -e " Password Igniter : ${users}"
-echo -e " Path WebSocket   : /DhanZaa"
+echo -e " Path WebSocket   : /Dpvpn"
 echo -e "${red}=================================${off}"
 echo -e " Trojan-GFW       : ${trojanlink}"
 echo -e "${red}=================================${off}"
@@ -122,5 +122,5 @@ echo -e " Aktif Selama     : $masaaktif Hari"
 echo -e " Dibuat Pada      : $tnggl"
 echo -e " Berakhir Pada    : $expe"
 echo -e "${red}=================================${off}"
-echo -e " ${blue}- Mod By Dhansss X NezaVPN${off}"
+echo -e " ${blue}- Mod By DP VPN${off}"
 echo -e ""
