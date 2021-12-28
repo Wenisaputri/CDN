@@ -3,12 +3,12 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 apt install jq curl -y
-DOMAIN=nezavpn.my.id
+DOMAIN=dpvpn.me
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 echo $sub > /root/cfku
-SUB_DOMAIN=${sub}.nezavpn.my.id
-CF_ID=neza.afdhan@gmail.com
-CF_KEY=c7ce6739f7548dcb626dcbee71140345f2625
+SUB_DOMAIN=${sub}dpvpn.me
+CF_ID=yesecikaa@gmail.com
+CF_KEY=9fe2beeba6162490040f413d6cb832ec19b2c
 set -euo pipefail
 IP=$(wget -qO- ipinfo.io/ip);
 echo "Record DNS ${SUB_DOMAIN}..."
