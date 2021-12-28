@@ -51,7 +51,7 @@ echo $SUB_DOMAIN > /root/domain
 #chmod +x /usr/bin/wcc
 
 echo -e "Done Record Domain For VPS" | lolcat
-figlet -f slant AFDHAN - NEZA | lolcat
+figlet -f slant DP VPN | lolcat
 sleep 1
 
 rm -f /root/cfo.sh
