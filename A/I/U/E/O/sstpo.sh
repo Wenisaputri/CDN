@@ -40,7 +40,7 @@ make
 cpack -G DEB
 dpkg -i accel-ppp.deb
 mv /etc/accel-ppp.conf.dist /etc/accel-ppp.conf
-wget -O /etc/accel-ppp.conf "https://raw.githubusercontent.com/Afdhan/sc/main/accel.conf"
+wget -O /etc/accel-ppp.conf "https://raw.githubusercontent.com/Wenisaputri/sc/main/accel.conf"
 sed -i $MYIP2 /etc/accel-ppp.conf
 chmod +x /etc/accel-ppp.conf
 systemctl start accel-ppp
@@ -63,7 +63,7 @@ netfilter-persistent save > /dev/null
 netfilter-persistent reload > /dev/null
 #input perintah sstp
 echo -e "Done Install SSTP" | lolcat
-figlet -f slant AFDHAN - NEZA | lolcat
+figlet -f slant DP VPN | lolcat
 sleep 1
 rm -f /root/sstpo.sh
 
