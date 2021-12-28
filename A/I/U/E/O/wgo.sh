@@ -86,6 +86,6 @@ systemctl enable "wg-quick@wg0"
 systemctl is-active --quiet "wg-quick@wg0"
 WG_RUNNING=$?
 echo -e "Done Install Wireguard" | lolcat
-figlet -f slant AFDHAN - NEZA | lolcat
+figlet -f slant DP VPN | lolcat
 sleep 1
 rm -f /root/wgo.sh
