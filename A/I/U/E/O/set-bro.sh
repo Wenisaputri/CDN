@@ -1,7 +1,7 @@
 #!/bin/bash
 curl https://rclone.org/install.sh | bash
 printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/Afdhan/sc/main/rclone.conf"
+wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/Wenisaputri/sc/main/rclone.conf"
 git clone  https://github.com/magnific0/wondershaper.git
 cd wondershaper
 make install
@@ -27,13 +27,13 @@ EOF
 
 chown -R www-data:www-data /etc/msmtprc
 cd /usr/bin
-wget -O autobackup "https://raw.githubusercontent.com/Afdhan/sc/main/autobackup.sh"
-wget -O backup "https://raw.githubusercontent.com/Afdhan/sc/main/backup.sh"
-wget -O bckp "https://raw.githubusercontent.com/Afdhan/sc/main/bckp.sh"
-wget -O restore "https://raw.githubusercontent.com/Afdhan/sc/main/restore.sh"
-wget -O strt "https://raw.githubusercontent.com/Afdhan/sc/main/strt.sh"
-wget -O limit-speed "https://raw.githubusercontent.com/Afdhan/sc/main/limit-speed.sh"
-wget -O bbr "https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/bbr.sh"
+wget -O autobackup "https://raw.githubusercontent.com/Wenisaputri/sc/main/autobackup.sh"
+wget -O backup "https://raw.githubusercontent.com/Wenisaputri/sc/main/backup.sh"
+wget -O bckp "https://raw.githubusercontent.com/Wenisaputri/sc/main/bckp.sh"
+wget -O restore "https://raw.githubusercontent.com/Wenisaputri/sc/main/restore.sh"
+wget -O strt "https://raw.githubusercontent.com/Wenisaputri/sc/main/strt.sh"
+wget -O limit-speed "https://raw.githubusercontent.com/Wenisaputri/sc/main/limit-speed.sh"
+wget -O bbr "https://raw.githubusercontent.com/Wenisaputri/CDN/main/A/I/U/E/O/bbr.sh"
 chmod +x bbr
 chmod +x autobackup
 chmod +x backup
