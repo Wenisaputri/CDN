@@ -24,9 +24,9 @@ touch /etc/trojan-go/uuid.txt
 mkdir -p /etc/trojan-go/
 chmod 777 /etc/trojan-go/
 touch /etc/trojan-go/trojan-go.pid
-wget -O /etc/trojan-go/trojan-go https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/trojan-go
-wget -O /etc/trojan-go/geoip.dat https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/geoip.dat
-wget -O /etc/trojan-go/geosite.dat https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/geosite.dat
+wget -O /etc/trojan-go/trojan-go https://raw.githubusercontent.com/Wenisaputri/CDN/main/A/I/U/E/O/trojan-go
+wget -O /etc/trojan-go/geoip.dat https://raw.githubusercontent.com/Wenisaputri/CDN/main/A/I/U/E/O/geoip.dat
+wget -O /etc/trojan-go/geosite.dat https://raw.githubusercontent.com/Wenisaputri/CDN/main/A/I/U/E/O/geosite.dat
 chmod +x /etc/trojan-go/trojan-go
 cat <<EOF > /etc/trojan-go/config.json
 {
@@ -84,7 +84,7 @@ cat <<EOF > /etc/trojan-go/config.json
   },
   "websocket": {
     "enabled": true,
-    "path": "/DhanZaa",
+    "path": "/Dpvpn",
     "host": "$domain"
   },
   "shadowsocks": {
@@ -166,6 +166,6 @@ systemctl enable trojan-go.service
 systemctl start trojan-go
 
 echo -e "Done Install Trojan" | lolcat
-figlet -f slant AFDHAN - NEZA | lolcat
+figlet -f slant DP VPN | lolcat
 sleep 1
 rm -f trojango.sh
