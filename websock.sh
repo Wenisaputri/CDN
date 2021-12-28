@@ -4,10 +4,10 @@ cd
 
 figlet -f slant Install WS | lolcat
 # Install Template
-wget -q -O /usr/local/bin/ws-drop "https://raw.githubusercontent.com/Afdhan/CDN/main/ws-dropbear.py"
-wget -q -O /usr/local/bin/ws-openssh "https://raw.githubusercontent.com/Afdhan/CDN/main/ws-openssh.py"
-wget -q -O /usr/local/bin/ws-ovpn "https://raw.githubusercontent.com/Afdhan/CDN/main/ws-ovpn.py"
-wget -q -O /usr/local/bin/ws-tls "https://raw.githubusercontent.com/Afdhan/CDN/main/ws-tls.py"
+wget -q -O /usr/local/bin/ws-drop "https://raw.githubusercontent.com/Wenisaputri/CDN/main/ws-dropbear.py"
+wget -q -O /usr/local/bin/ws-openssh "https://raw.githubusercontent.com/Wenisaputri/CDN/main/ws-openssh.py"
+wget -q -O /usr/local/bin/ws-ovpn "https://raw.githubusercontent.com/Wenisaputri/CDN/main/ws-ovpn.py"
+wget -q -O /usr/local/bin/ws-tls "https://raw.githubusercontent.com/Wenisaputri/CDN/main/ws-tls.py"
 
 chmod +x /usr/local/bin/ws-drop
 chmod +x /usr/local/bin/ws-openssh
@@ -20,7 +20,7 @@ figlet -f slant Configurating CDN | lolcat
 cat > /etc/systemd/system/ws-dropbear.service << END
 [Unit]
 Description=SSH Over CDN WS Dropbear
-Documentation=https://dhans-project.xyz
+Documentation=https://dpvpn.me
 After=network.target nss-lookup.target
 [Service]
 Type=simple
@@ -38,7 +38,7 @@ END
 cat > /etc/systemd/system/ws-openssh.service << END
 [Unit]
 Description=SSH Over CDN WS Dropbear
-Documentation=https://dhans-project.xyz
+Documentation=https://dpvpn.me
 After=network.target nss-lookup.target
 [Service]
 Type=simple
@@ -56,7 +56,7 @@ END
 cat > /etc/systemd/system/ws-openvpn.service << END
 [Unit]
 Description=SSH Over CDN WS OpenVPN
-Documentation=https://dhans-project.xyz
+Documentation=https://dpvpn.me
 After=network.target nss-lookup.target
 [Service]
 Type=simple
@@ -74,7 +74,7 @@ END
 cat > /etc/systemd/system/ws-stunnel.service << END
 [Unit]
 Description=SSH Over CDN WS Stunnel
-Documentation=https://dhans-project.xyz
+Documentation=https://dpvpn.me
 After=network.target nss-lookup.target
 [Service]
 Type=simple
