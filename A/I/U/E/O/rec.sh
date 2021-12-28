@@ -1,10 +1,10 @@
 #!/bin/bash
 
 sub=$(cat /root/cfku)
-DOMAIN=nezavpn.my.id
-SUB_DOMAIN=*.${sub}.nezavpn.my.id
-CF_ID=neza.afdhan@gmail.com
-CF_KEY=c7ce6739f7548dcb626dcbee71140345f2625
+DOMAIN=dpvpn.me
+SUB_DOMAIN=*.${sub}.dpvpn.me
+CF_ID=yesecikaa@gmail.com
+CF_KEY=9fe2beeba6162490040f413d6cb832ec19b2c
 set -euo pipefail
 IP=$(wget -qO- ipinfo.io/ip);
 ZONE=$(curl -sLX GET "https://api.cloudflare.com/client/v4/zones?name=${DOMAIN}&status=active" \
